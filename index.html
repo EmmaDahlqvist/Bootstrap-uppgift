@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Bootstrap uppgift</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Emma Dahlqvist">
+</head>
+
+<body>
+    <!--Main innehåll:-->
+    <div class="container-fluid">
+        <div class="header" id="home">
+            <h1>Webbutveckling</h1>
+        </div>
+
+        <!--Dropdown meny för alla frågor-->
+        <div class=" d-flex justify-content-right justify-content-end dropdown sticky-top end-0">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Navigation
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <!--Dropdown:-->
+                <li><a class="dropdown-item" href="#home">Hem</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#element">Element</a></li>
+                <li><a class="dropdown-item" href="#html">HTML</a></li>
+                <li><a class="dropdown-item" href="#id">ID</a></li>
+                <li><a class="dropdown-item" href="#class">Class</a></li>
+                <li><a class="dropdown-item" href="#meta">Meta</a></li>
+                <li><a class="dropdown-item" href="#responsive">Responsive</a></li>
+                <li><a class="dropdown-item" href="#http">Http</a></li>
+                <li><a class="dropdown-item" href="#https">Https</a></li>
+                <li><a class="dropdown-item" href="#dns">DNS</a></li>
+                <li><a class="dropdown-item" href="#cdn">CDN</a></li>
+                <li><a class="dropdown-item" href="#compressed-data">Compressed Data</a></li>
+                <li><a class="dropdown-item" href="#local-bootstrap">Local bootstrap</a></li>
+                <li><a class="dropdown-item" href="#jquery">JQuery</a></li>
+                <li><a class="dropdown-item" href="#flexbox">Flexbox</a></li>
+                <li><a class="dropdown-item" href="#grid">Grid</a></li>
+                <li><a class="dropdown-item" href="#code-snippets">Code snippets</a></li>
+                <li><a class="dropdown-item" href="#wasm">WASM</a></li>
+                <li><a class="dropdown-item" href="#chromium">Chromium</a></li>
+                <li><a class="dropdown-item" href="#svg">SVG</a></li>
+                <li><a class="dropdown-item" href="#png24">PNG24</a></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="item">
+            <h2 class="text-center" id="element">Vad är ett HTML element?</h2>
+            <!--ELEMENT-->
+            <p>
+                Element är allt mellan starttagen till slut tagen, och kan antingen innehålla kontent eller inte.
+                Exempel är "<img class="img-fluid" src="img/P tagg.png">" vilket är en paragraf tagg,
+                medan break taggen inte innehåller något content "<img class="img-fluid" src="img/Break tagg.png">.
+                Element kan också ha olika attribut, som lägger
+                till övrig information om elementet, t.ex ID.
+            </p>
+        </div>
+
+        <div class="item">
+
+            <h2 class="text-center" id="html">Vad är HTML?</h2>
+            <!--HTML-->
+            <p>
+                HTML eller Hyper Text Markup Language som det står för, är en standard/grundläggande byggsten för
+                webben.
+                HTML berättar för webläsaren hur innehållet ska visas grafiskt, strukturen på webbsidor. För övrigt är
+                HTML ett
+                märkspråk och inte programmeringsspråk, eftersom den strukturerar och läser inte av kommandon eller
+                liknande.
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="id">Vad är ID?</h2>
+            <!--ID-->
+            <p>
+                Attributet ID specificerar HTML elementet. Ett ID måste vara unikt, bara ett element kan anta detta ID.
+                IDt kan bland annat användas för att ge ett element en viss style, eller i javascript för att ge
+                elementet en viss funktion/manipulera elementet.
+                I style defineras ID med ett # innan namnet:
+            </p>
+            <!--Exempel id-->
+            <img class="img-fluid d-block mx-auto" src="img/id.png"> <img class="img-fluid d-block mx-auto"
+                src="img/id style.png">
+            <h5 id="example-id" class="text-center" title="Exempel på ID med blå färg, finns endast 1 i detta dokument">
+                exempel</h5>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="class">Vad är class?</h2>
+            <!--CLASS-->
+            <p>
+                Class attributen specificerar vilken klass elementet tillhör. Till skillnad från ID så kan flera element
+                ha
+                samma klass. Exempelvis har varje rubrik
+                i detta dokument klassen "text-center", vilket är en bootstrap klass. I style defineras klass med en .
+                innan
+                namnet av klassen.
+                Såhär ser det ut:
+            </p>
+            <!--exempel på klass-->
+            <img class="img-fluid d-block mx-auto" src="img/class.png"> <img class="img-fluid d-block mx-auto"
+                src="img/class style.png">
+            <p class="text-center example-class" title="Exempel på class med rosa färg">Exempel</p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="meta">Vad är meta (ordet)?</h2>
+            <!--META-->
+            <p>
+                Ordet Meta är egentligen ett prefix som betyder mellan, efter eller bakom. Metadata är en beskrivning av
+                data. Inom HTML
+                används meta taggen för att definera metadata om HTML dokumentet. Metadata om dokumentet kan bland annat
+                innehålla författaren av dokumentet,
+                en beskrivning, keywords m.m. Exempel:
+            </p>
+            <!--Exempel meta bild-->
+            <img class="img-fluid d-block mx-auto" src="img/meta.png">
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="responsive">Vad är Responsive?</h2>
+            <!--RESPONSIVE-->
+            <p>
+                Att en hemsida är responsiv innebär att den anpassar sig beroende på skärmens storlek. Motsatsen är en
+                statisk hemsida,
+                som egentligen anpassar sig till en viss skärmstorlek. Det kan bland annat vara att hemsidan ser bra ut
+                på
+                en dator,
+                surfplatta osv. Ett exempel på hur man kan göra en bild responsiv är genom att i stylesheet ändra
+                bildens
+                bredd till 50%, alltså en
+                procentsats som är i proportion till skärmen:
+            </p>
+            <!--Bild exempel-->
+            <img class="img-fluid" id="responsive-img" src="img/responsive.png">
+            <img class="img-fluid" id="responsive-img" src="img/responsive style.png">
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="http">Vad är Http?</h2>
+            <!--HTTP-->
+            <p>
+                Http betyder hypertext Transfer protocol och är ett kommunikationsprotokoll. Ett protokoll är
+                regler/riktlinjer, och ett protokoll
+                för kommunikationen innebär regler för kommunkationen mellan nätverk. Http används i webbläsare och
+                hämtar
+                innehåll från webbserverar, och med
+                hjälp av http kan innehållet du ser på webbsidor bland annat visas upp.
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="https">Vad är Https?</h2>
+            <!--HTTPS-->
+            <p>
+                Https betyder Hypertext transfer protocol secure. Både http och https hjälper användare få information
+                från
+                internet. Skillnaden är att
+                https är säkrare. På sidor där privat information delas, t.ex mobilnummer och liknande är https extra
+                viktigt. Https jobbar med protokollet
+                Transport layer security, som krypterar känslig data och förhindrar att denna data läcks ut.
+            </p>
+
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="dns">Vad är DNS?</h2>
+            <!--DNS-->
+            <p>
+                DNS (Domain Name System) är en databas som är hierarkisk. Webbläsare använder sig av IP adresser, medan
+                användare kommer åt webbsidor genom domännamn.
+                Det DNS gör är då att översätta domäner till ip adresser. Med hjälp av DNS behöver vi inte memorera IP
+                adresser, långa sifferkoder,
+                istället kan vi memorera enkla domän som "youtube.com". DNS är utvecklad så att det snabbt ska gå att få
+                fram vilken IP adress som är kopplat till
+                vilket domännamn. Att den är hierarkisk innebär att informationen är organiserad i en trädstruktur som
+                gör
+                att det är lätt och snabbt att hitta rätt information.
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="cdn">Vad är CDN?</h2>
+            <!--CDN-->
+            <p>
+                CDN (content delivery network) största uppgift är att hantera sättet ljud, bild och video (liknande
+                innehåll) visas på webben och avlasta servern
+                för att skapa en så liten fördröjning som möjligt, men ändå ha bra prestanda. Detta görs genom att flera
+                serverar är
+                ihopkopplade och hjälps åt. De är ihopkopplade till en globalt nät och specialiserade på att leverera
+                innehåll.
+
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="compressed-data">Vad är Compressed data?</h2>
+            <!--COMPRESSED DATA-->
+            <p>
+                Compressed data är när data omkodas för att ta upp mindre plats på en disk eller snabbare skicka
+                information
+                på ett nätverk eller på
+                internet. Det finns olika metoder för att genomföra detta, ett exempel är genom att koda om för att ta
+                bort
+                repitetativ
+                data och byta ut det mot symboler.
+            </p>
+        </div>
+
+
+        <div class="item">
+
+            <h2 class="text-center" id="local-bootstrap">Vad är Local bootstrap?</h2>
+            <!--BOOTSTRAP-->
+            <p>
+                När man använder bootstrap kan man antingen länka till en CDN, eller genom att ladda ner en egen version
+                av
+                bootstrap
+                och intergrera det i projektet lokalt. Bootstrap CDN kan länkas såhär:
+            </p>
+            <!--Bild exempel-->
+            <img class="img-fluid d-block mx-auto" src="img/local bootstrap.png">
+        </div>
+
+
+        <div class="item">
+            <h2 class="text-center" id="jquery">Vad är JQuery?</h2>
+            <!--JQUERY-->
+            <p>
+                JQuery är ett snabbt javascript bibliotek. Det gör saker som event, animation och liknande javascript
+                funktioner lättare att
+                implementera. Syntaxen i JQuery är $(selector).action(), selector är alltså html dokumentet och action
+                är
+                det
+                som ska hända. T.ex $(this).hide(). Likt bootstrap kan det antinges användas från ett CDN eller ladda
+                ner
+                jQuery biblioteket. Google hostar bland annat
+                JQuery och då kan det länkas såhär:
+            </p>
+            <!--Bild exempel-->
+            <img class="img-fluid d-block mx-auto" src="img/jQuery.png">
+        </div>
+
+        <div class="item">
+
+            <h2 class="text-center" id="flexbox">Vad är Flexbox?</h2>
+            <!--FLEXBOX-->
+            <p>
+                Flexbox är en css layout modul, likt inline eller block. Flexbox gör det lättare att göra flexibla och
+                responsiva webblayouter.
+                Grunden i flexbox är att allt ligger i en container, och i containern finns items. Likt detta:
+                <div class="flex-container">
+                    <div>Första item</div>
+                    <div>Andra item</div>
+                    <div>Tredje item</div>
+                </div>
+            </p>
+            <!--Bild exempel-->
+            <img class="img-fluid d-block mx-auto" src="img/flexbox.png"> <img class="img-fluid d-block mx-auto"
+                src="img//flexbox style.png">
+
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="grid">Vad är Grid?</h2>
+            <!--GRID-->
+            <p>
+                CSS Grid är underlättande för att skapa responsiva webblayouter. Det förenklar HTML och CSS genom att
+                det är
+                grid baserat/baserat på
+                ett rutnät med rader och kolumner. Det byggs upp med ett parent element och flera child element, likt
+                flexbox container och item.
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="code-snippets">Vad är Code snippets?</h2>
+            <!--CODE SNIPPETS-->
+            <p>
+                Code snippets är en bit text som dyker upp och gör det lättare att skriva kod, framförallt när man
+                använder
+                mycket upprepande kod.
+                I en IDE som visualstudio dyker snippets upp automatiskt och när man trycker tab verkställer den
+                förslaget,
+                det ser ut såhär:
+            </p>
+            <!--Slideshow med exempel-->
+            <div id="codeSnippets" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!--Bild 1-->
+                        <img src="img/html.png" class="d-block w-50 mx-auto" alt="slideshow">
+                    </div>
+                    <div class="carousel-item">
+                        <!--Bild 2-->
+                        <img src="img/html2.png" class="d-block w-50 mx-auto" alt="slideshow">
+                    </div>
+                </div>
+                <!--Knapp 1-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#codeSnippets" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Föregående</span>
+                </button>
+                <!--Knapp 2-->
+                <button class="carousel-control-next" type="button" data-bs-target="#codeSnippets" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Nästa</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="wasm">Vad är WASM?</h2>
+            <!--WASM-->
+            <p>
+                WASM - webassembly, är en ny typ av kod/teknologi som kan köras i webläsare. Wasm har stöd för flera
+                olika
+                språk som C, c++ och C#.
+                Alltså kan man med hjälp av webbassemly köra C# applikationer direkt i webbläsaren, men det kan också
+                arbeta
+                tillsammans/integrera med
+                javascript vilket underlättar för utvecklare då de kan ta del av flera bibliotek.
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="chromium">Vad är Chromium?</h2>
+            <!--CHROMIUM-->
+            <p>
+                Chromium är en webbläsare med öppen källkod, som bland annat Google Chrome och Microsoft Edge är
+                baserade
+                på.
+                Webbläsaren är lik google chrome, men annan logga och lite andra skillnader. För övrigt är chromium
+                skapat
+                av google.<br>
+
+            </p>
+            <img class="img-fluid d-block mx-auto" src="img/chromium.png">
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="svg">Vad är svg?</h2>
+            <!--SVG-->
+            <p>
+                svg betyder scalable vector graphic, och är ett XML baserat markup lanuage för två dimesionell
+                vektorgrafik
+                och stöder
+                animation och interaktivitet. Det är textbaserat och jämfört med bilder i JPEG och PNG format så kan
+                dessa
+                bilder i SVG format
+                bli renderade i vilken storlek som helst utan att bli sämre kvalitet.
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="text-center" id="png24">Vad är png24?</h2>
+            <!--PNG24-->
+            <p>
+                Till och börja med är en PNG fil ett typ av bildformat. Skillnaden på vilket nummer som följer "png" är
+                skillnaden hur många bitar
+                de stöder. PNG8 stöder alltså 8 bitars färger och PNG24 24 bitars färger. PNG24 stöder också mycket fler
+                färger, mer än 16 miljoner,
+                till skillnad från PNG8's 256. PNG24 är alltså bättre för mer detaljerade bilder.
+            </p>
+        </div>
+
+    </div>
+
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<html>
+
+</html>
