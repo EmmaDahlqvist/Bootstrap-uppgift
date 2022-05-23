@@ -1,0 +1,41 @@
+/*Exempel ID*/
+#example-id{
+    color:blue;
+}
+
+/*Exempel klass rosa färg*/
+.example-class {
+    color: pink;
+}
+
+/*Exempel responsiv bild*/
+#responsive-img{
+    width: 50%;
+}
+
+/*Exempel container med tre items på rad*/
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Rubrik på sidan*/
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+/*Lägger till scroll på dropdown menyn*/
+.dropdown-menu{
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+/*Mellanrum mellan items*/
+.item{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
